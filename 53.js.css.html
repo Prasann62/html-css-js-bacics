@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        #form{
+            width: 550px;
+            height: 800px;
+            background: rgb(182, 239, 241);
+           text-align: center;
+            position:relative ;
+            top: 100px;
+            left: 400px; 
+           
+            
+        }
+       
+        #n{
+            
+            position: absolute;
+            line-height: 50px;
+            gap: 30px;
+            top: 90px;
+            left: 80px;
+        }
+      label
+      {
+        display: inline;
+        width: 150px;
+      }
+     
+      
+
+    </style>
+    <script>
+         function  bbb()
+        {
+            var na;
+            na=document.getElementById("na").value;
+            if(na=="")
+            {
+                document.getElementById("n1").innerHTML="*please fill a name";
+                document.getElementById("n1").style.color="red";
+            }
+            else{
+                document.getElementById("n1").innerHTML="";
+            }
+            
+        
+            var na;
+            fa=document.getElementById("fa").value;
+            if(fa=="")
+            {
+                document.getElementById("n2").innerHTML="*please fill a father  name";
+                document.getElementById("n2").style.color="red";
+            }
+            else{
+                document.getElementById("n2").innerHTML="";
+            }
+            
+           
+       
+            var na;
+            gm=document.getElementById("gm").value;
+            if(gm=="")
+            {
+                document.getElementById("n3").innerHTML="*please fill a gamil";
+                document.getElementById("n3").style.color="red";
+            }
+            else{
+                document.getElementById("n3").innerHTML="";
+            }
+            
+           
+       
+            var na;
+            mn=document.getElementById("mn").value;
+            if(mn=="")
+            {
+                document.getElementById("n4").innerHTML="*please fill a mobile number";
+                document.getElementById("n4").style.color="red";
+            }
+            else {
+                document.getElementById("n4").innerHTML="";
+            }
+            
+           
+       
+            var na;
+            db=document.getElementById("db").value;
+            if(db=="")
+            {
+                document.getElementById("n5").innerHTML="*please  fill date of birth";
+                document.getElementById("n5").style.color="red";
+            }
+            else{
+                document.getElementById("n5").innerHTML="";
+            }
+            
+       
+            var na;
+            aa=document.getElementById("aa").value;
+            if(aa=="")
+            {
+                document.getElementById("n6").innerHTML="*please fill address";
+                document.getElementById("n6").style.color="red";
+            }
+            else{
+                document.getElementById("n6").innerHTML="";
+            }
+            
+           
+        }
+    </script>
+</head>
+<body>
+    <div id="form">
+       <h1>application</h1> 
+        <div id="n"><label>
+            NAME:</label>
+            <input type="text"  placeholder="enter a name" id="na"><div id="n1"></div> <br>          
+             <label>  FATHER NAME:</label><input type="text" placeholder="enter a father name" id="fa"> <div id="n2"></div><br>
+            <label>MAIL:</label> <input type="mail"  placeholder="gmail" id="gm"><div id="n3"></div> <br>
+           <label> NUMBER: </label><input type="number"  placeholder="mobile number" id="mn"><div id="n4"></div> <br>
+           <label> OF BIRTH: </label><input type="date"  placeholder="date of birth" id="db"><div id="n5"></div> <br>
+           <label>ADDRESS:</label><textarea id="aa"></textarea> <div id="n6"></div><br>
+          <button  style="background-image: linear-gradient(135deg,rgb(214, 169, 169),rgb(198, 198, 236),rgb(197, 247, 244)); border:2px solid black; border-radius:15%;width: 100px; height: 35px;"
+            onclick="bbb()" >summit</button><br>
+        </div>
+
+    </div>
+</body>
+</html>

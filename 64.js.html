@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function x(){
+            var con;
+            con=document.getElementById("c").value;
+           
+            var ind=['tn','kl','ap','ma'];
+            if( con=="india")
+            {
+                var st="";
+                for(i=0;i<ind.length;i++)
+                {
+                    st=st+"<option>"+ind[i]+"</option>";
+                }
+                document.getElementById("op").innerHTML=st;
+            }
+            var ind=['le','nu','sp','mu'];
+            if( con=="england")
+            {
+                var st="";
+                for(i=0;i<ind.length;i++)
+                {
+                    st=st+"<option>"+ind[i]+"</option>";
+                }
+                document.getElementById("op").innerHTML=st;
+            }
+            var ind=['rm','am','rb','ba','sd'];
+            if( con=="spain")
+            {
+                var st="";
+                for(i=0;i<ind.length;i++)
+                {
+                    st=st+"<option>"+ind[i]+"</option>";
+                }
+                document.getElementById("op").innerHTML=st;
+            }
+        }
+    </script>
+</head>
+<body>
+    <select onchange="x()" id="c">
+        <option> select a country</option>
+        <option > india</option> 
+        <option > england</option> 
+        <option > spain</option> 
+    </select>
+    <select id="op">
+
+    </select>
+</body>
+</html>

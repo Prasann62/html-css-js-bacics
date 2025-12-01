@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f0f2f5;
+            font-family: Arial,  sans-serif;
+        }
+        #form{
+            text-align: center;
+            padding: 30px;
+            width: 350px;
+            background: rgb(185, 202, 233);
+           box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            
+            border-radius: 15px;  
+ 
+        }
+        #form h2{
+            margin-bottom: 25px;
+            color: #333;
+        }
+        
+        .field{
+            
+            margin-bottom: 20px;
+            text-align: left;
+
+        }
+       
+        
+       input{
+            width: 100%;
+            height: 35px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        #loginbtn{
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            background: linear-gradient(to right,dodgerblue,rgb(105,1,191));
+        }
+        #loginbtn:hover{
+            opacity: 0.9;
+        }
+        
+    </style>
+    <script>
+         function  login()
+        {
+
+            var na;
+            na=document.getElementById("i1").value;
+            var nn ;
+            nn=document.getElementById("i2").value;
+            if(na=="abc"&&nn=="123")
+            {
+               alert("log in ")
+            }
+            else{
+               alert("invalid");
+            }
+
+            
+            
+
+        }
+    </script>
+</head>
+<body>
+    <div id="form"><h2>LOG IN FORM</h2>
+    <div id="field"> <input id="i1" type="text" placeholder=" gmail or phone"><spn id="e1"></spn> </div>
+     <div id="field"><input id="i2"type="password"placeholder=" password"> <spn id="p2"></spn></div>
+     
+    <div id="bt"><button id="loginbtn" onclick="login()">
+        log in</button></div>
+</div>
+</body>
+</html>

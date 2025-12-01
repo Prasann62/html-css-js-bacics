@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function x(){
+            var con;
+            con=document.getElementById("c").value;
+            var ind=['tn','kl','ap','ma'];
+            if( con=="india")
+            {
+              document.getElementById("op").innerHTML="<option>"+ind[0]+"</option> <option>"+ind[1]+"</option> <option>"+ind[2]+"</option> <option>"+ind[3]+"</option>"
+            }
+            var con;
+            con=document.getElementById("c").value;
+            var ind=['le','nu','as','mu'];
+            if( con=="england")
+            {
+              document.getElementById("op").innerHTML="<option>"+eng[0]+"</option> <option>"+eng[1]+"</option> <option>"+eng[2]+"</option> <option>"+eng[3]+"</option>"
+            }
+            var con;
+            con=document.getElementById("c").value;
+            var ind=['rm','ba','rb','am'];
+            if( con=="spain")
+            {
+              document.getElementById("op").innerHTML="<option>"+spa[0]+"</option> <option>"+spa[1]+"</option> <option>"+spa[2]+"</option> <option>"+spa[3]+"</option>"
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <select onchange="x()" id="c">
+        <option> select a countey</option>
+        <option > india</option> 
+        <option > england</option> 
+        <option> spain</option> 
+    </select>
+    <select id="op">
+
+
+    </select>
+</body>
+</html>

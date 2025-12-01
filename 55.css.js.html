@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        align-items: center;
+       margin: 0;
+       background: whitesmoke;
+       
+
+        }
+        #form{
+            text-align: center;
+            height: 350px;
+            width: 350px;
+            top: 200px;
+            
+            background: #374650;
+            border-radius: 15px;
+            display: flex;
+            position: relative;
+            box-shadow: 10px 10px 20px #babecc,-10px -10px 20px #ffffff;
+          
+        }
+        #log{
+            text-align: center;
+            background:#eaf4f4;
+            height: 100px;
+            width: 350px;
+            border-radius: 15px;}
+          
+          #f1{width: 250px;
+           height: 50px;
+           position: absolute;
+           top: 140px;
+           left: 60px;
+           border-radius: 15px;
+        
+        }
+        #f2{
+            width: 250px;
+            height: 50px;
+            position: absolute;
+            top: 210px;
+            left: 60px;
+            border-radius: 15px;
+        }
+        #em{
+            position: absolute;
+            width: 200px;
+            height: 65px;
+            top: 193px;
+            left: 65px;
+        }
+        #pa{
+            position: absolute;
+            width: 200px;
+            height: 65px;
+            top: 265px;
+            left: 65px;
+        }
+       
+
+       
+       
+        button{
+            height: 45px;
+            width: 225px;
+            border-radius: 15px;
+            
+            background: #dcf763;
+            position: absolute;
+            cursor: pointer;
+            top: 290px;
+            left: 70px;
+            border: 3px solid#dcf763;
+        }
+        button:hover{
+            opacity: 0.9;
+        }
+        #f1:hover{
+            opacity: 0.9;
+
+        }
+        #f2:hover{
+            opacity: 0.9;
+        }
+        
+    </style>
+    <script>
+         function  login()
+        {
+            var f1;
+            f1=document.getElementById("f1").value;
+            if(f1=="")
+            {
+                document.getElementById("em").innerHTML="*please enter a email";
+                document.getElementById("em").style.color="red";
+            }
+            else{
+                document.getElementById("em").innerHTML="";
+            }
+        
+            var f2;
+            f2=document.getElementById("f2").value;
+            if(f2=="")
+            {
+                document.getElementById("pa").innerHTML="*please fill a password";
+                document.getElementById("pa").style.color="red";
+            }
+            else{
+                document.getElementById("pa").innerHTML="";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="form">
+         <div id="log"><h2>LOG IN </h2></div>
+        <input  id="f1"type="email" placeholder=" email or phone"><div id="em"></div>
+       <input id="f2" type="password" placeholder="password"> <div id="pa"></div>
+
+       
+       
+        <div><button onclick="login()" style="font-weight: 20em;">log in</button></div>
+        
+        </div>
+    </div>
+    
+</body>
+</html>

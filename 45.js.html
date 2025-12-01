@@ -1,0 +1,46 @@
+<script>
+    
+    var name ,tam,eng,mat,sci,soc,ans;
+    var num;
+    num=parseInt(prompt("enter a number of  student"));
+    for(i=0; i<=num;i++){
+
+    name=prompt(("enter a name"));
+    
+    tam=parseInt(prompt("enter tamil mark"));
+    eng=parseInt(prompt("enter english mark"));
+    mat=parseInt(prompt("enter maths mark"));
+    sci=parseInt(prompt("enter scince mark"));
+    soc=parseInt(prompt("enter social mark"));
+    
+    if (tam>=35&&eng>=35&&mat>=35&&sci>=35&&soc>=35)
+     {  console.log("you are pass")
+        
+    } else 
+    {
+       console.log("you are fail") 
+    }
+     if (ans>=450) {console.log("a+")
+        
+     }
+      else if(ans>=350) {console.log("b+")
+        
+     }
+     else if(ans>=270)
+     {console.log("c+")
+    }
+     else if(ans>=200)
+     {console.log("d+")
+    }
+     else if(ans>=175)
+     {console.log("d-")}
+     else if(ans<=174){console.log ("no grade")}
+    ans=(tam+eng+mat+sci+soc);
+    avarage=ans/5
+    console.log("name:"+name);
+    console.log("total="+ans)
+    console.log("avarage mark="+avarage)
+    
+}
+    
+</script>

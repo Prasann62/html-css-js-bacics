@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function x(){
+            var con;
+            con=document.getElementById("c").value;
+            document.getElementById("op").innerHTML=con;
+        }
+    </script>
+</head>
+<body>
+    <select onchange="x()" id="c">
+        <option value="1"> select a country</option>
+        <option value="+91"> india</option> 
+        <option value="+1"> england</option> 
+        <option value="+44"> spain</option> 
+    </select>
+    <div id="op">
+
+    </div>
+</body>
+</html>

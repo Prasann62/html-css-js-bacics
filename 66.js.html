@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> country name</h2>
+
+
+
+    <select id="demo"> </select>
+
+
+
+    <script>
+   let text = '{"country":[{"country":"india"},{"country":"england"},{"country":"wales"},{"country":"spian"},{"country":"iran"},{"country":"russia"}]}';
+  const obj= JSON.parse(text);
+   document.getElementById("demo").innerHTML =" <option>"+obj.country[1].country + "</option><option> " + obj.country[2].country+"</option>";    
+    
+    </script>
+</body>
+</html>

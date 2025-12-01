@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function x(){
+            var con;
+            con=document.getElementById("c").value;
+            if(con=="india")
+            {
+                document.getElementById("op").innerHTML="<option> tn</option><option> kl</option><option> ma</option>"
+            }
+            var con;
+            con=document.getElementById("c").value;
+            if(con=="england")
+            {
+                document.getElementById("op").innerHTML="<option> liverpool</option><option>newcastle</option><option>man city</option>"
+            }
+            var con;
+            con=document.getElementById("c").value;
+            if(con=="spain")
+            {
+                document.getElementById("op").innerHTML="<option> madrid</option><option>betes</option><option>socidad</option>"
+            }
+        }
+    </script>
+</head>
+<body>
+    <select onchange="x()" id="c">
+        <option> select a country</option>
+        <option> india</option>
+        <option > england</option> 
+        <option > spain</option> 
+    </select>
+    <select id="op"></select>
+</body>
+</html>

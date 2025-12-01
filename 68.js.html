@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+    
+     
+    <script>
+        function x()
+        {
+            var so;
+            so=document.getElementById("sor").value;
+            document.getElementById("a1").src=so;
+           if(so=="f1.jpg")
+            {    
+            document.getElementById("a1").style.border="5px solid blue";
+            
+        }
+        if(so=="f2.jpg")
+            {    
+            document.getElementById("a1").style.border="5px solid yellow";
+            
+            
+        }
+        if(so=="l2.jpg")
+            {    
+            document.getElementById("a1").style.border="5px solid pink" ;
+           
+            
+        }
+           
+        }
+        
+    </script>
+</head>
+<body>
+    <img src="sor" id="a1" width="450px" height="500px"></img>
+    <select id="sor" onclick="x()" >
+        <option   value="f1.jpg">blue flower</option>
+        <option  value="f2.jpg">sun floewr</option>
+        <option    value="l2.jpg">lotes</option>
+
+    </select>
+</body>
+</html>
